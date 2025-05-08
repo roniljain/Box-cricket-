@@ -1,0 +1,9 @@
+Powerplay Premier League body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(#002f4b, #dc4225); background-size: 400% 400%; animation: gradient 15s ease infinite; color: white; } <pre><code>@keyframes gradient { 0% {background-position: 0% 50%;} 50% {background-position: 100% 50%;} 100% {background-position: 0% 50%;} } .container { max-width: 500px; margin: 60px auto; padding: 30px; background: rgba(0, 0, 0, 0.6); border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); } h1 { text-align: center; margin-top: 30px; } h2 { text-align: center; } input, select, button { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; } button { background-color: #28a745; color: white; font-size: 16px; cursor: pointer; } button:hover { background-color: #218838; } .admin-login { text-align: center; margin-top: 20px; } .hidden { display: none; } .logo { display: block; margin: 30px auto 10px; max-width: 150px; } </code></pre>  
+Powerplay Premier League
+Cricket Registration
+Select GenderMaleFemaleOther Register 
+Admin Login 
+Admin Login
+Login 
+Back 
+function showAdminLogin() { document.getElementById('registrationForm').classList.add('hidden'); document.getElementById('adminLogin').classList.remove('hidden'); } function hideAdminLogin() { document.getElementById('registrationForm').classList.remove('hidden'); document.getElementById('adminLogin').classList.add('hidden'); } function loginAdmin() { const user = document.getElementById('adminUser').value; const pass = document.getElementById('adminPass').value; if (user === 'roniljain' && pass === 'powerplay #360') { alert('Admin login successful!'); // Redirect or show admin dashboard here } else { alert('Invalid credentials!'); } }
